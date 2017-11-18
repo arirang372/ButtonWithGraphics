@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="32dp">
+
+
+                    <ImageButton
+                        android:visibility="visible"
+                        android:id="@+id/btnCaregiverButtonImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_alignLeft="@+id/progressBar"
+                        android:layout_alignTop="@+id/progressBar"
+                        android:layout_alignRight="@+id/progressBar"
+                        android:layout_alignBottom="@+id/progressBar"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:src="@drawable/ic_white_circle_search" />
+
+
+                    <ProgressBar    android:id="@+id/progressBar"
+                                    android:theme="@style/CircularProgress"
+                                    android:layout_width="230dp"
+                                    android:layout_height="230dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:indeterminate="true"/>
+
+
+                    <RatingBar  android:id="@+id/ratingBar"
+                                android:layout_centerHorizontal="true"
+                                android:layout_below="@+id/progressBar"
+                                android:layout_marginTop="30dp"
+                                android:numStars="5"
+                                android:stepSize="1"
+                                android:layout_width="300dp"
+                                android:layout_height="90dp"
+                                android:paddingTop="20dp"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="30dp"
+                                android:paddingRight="30dp"
+                                android:max="5"
+                                />
+
+
+</RelativeLayout>

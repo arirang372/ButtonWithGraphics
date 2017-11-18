@@ -1,0 +1,36 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="login_button_width">175dp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+    <dimen name="login_field_width">400dp</dimen>
+
+    <dimen name="each_page_layout_margin_top">90dp</dimen>
+
+    <dimen name="top_icon_image_view_size">24dp</dimen>
+
+    <dimen name="basic_info_height">850dp</dimen>
+
+    <dimen name="bigger_page_height">880dp</dimen>
+
+    <dimen name="action_bar_text_size">20sp</dimen>
+    <dimen name="page_title_font">23sp</dimen>
+
+    <dimen name="note_width">500sp</dimen>
+    <dimen name="note_height">600sp</dimen>
+    <dimen name="card_view_margin">25dp</dimen>
+    <dimen name="image_button_size_medium">48dp</dimen>
+    <dimen name="image_button_size_small">36dp</dimen>
+    <dimen name="image_button_size_big">64dp</dimen>
+    <dimen name="single_item_view_marginLeft">25dp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+
+    <dimen name="caregiver_progress_size">180dp</dimen>
+    <dimen name="caregiver_progress_box_circle_size">200dp</dimen>
+    <dimen name="caregiver_progress_box_height">400dp</dimen>
+    <dimen name="caregiver_progress_box_marginLeft">15dp</dimen>
+    <dimen name="caregiver_progress_box_text_size">28sp</dimen>
+    <dimen name="caregiver_progress_box_text_width">200dp</dimen>
+</resources>

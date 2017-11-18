@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Circular Progress Button</string>
+    <string name="Upload">Upload</string>
+    <string name="Error">Error</string>
+    <string name="Complete">Complete</string>
+    <string name="IndeterminateProgressSample">Changing a button image</string>
+    <string name="IntegerProgressSample">Show progresses through Button and Progress Bar</string>
+    <string name="StateChangeSample">State Change Sample</string>
+    <string name="ProgressPaddingSample">Progress Padding Sample</string>
+    <string name="CustomSelectorSample">Custom Selector Sample</string>
+
+    <array name="sample_list">
+        <item>@string/IndeterminateProgressSample</item>
+        <item>@string/IntegerProgressSample</item>
+    </array>
+    <string name="lb_select_facility">Please select a facility that you are currently visiting</string>
+    <string name="lb_select_roc">Please select a resident that needs a care</string>
+    <string name="lb_go_back_to_request_order">Back to Care Request Home</string>
+    <string name="lb_care_history_title">History of Care Requests</string>
+    <string name="no_history">No history of care request(s) found</string>
+    <string name="agency_name">Agency Name</string>
+    <string name="facility_name">Facility Name</string>
+    <string name="facility_contact">Facility Contact</string>
+    <string name="address">Address</string>
+    <string name="resident_name">Resident Name</string>
+    <string name="resident_room_bed">Resident Room and Bed</string>
+    <string name="resident_work_order_instruction">Please press a red button to request a care</string>
+    <string name="work_order_status">Here is a work order status below</string>
+    <string name="lb_requested_work_order">You just requested a work order</string>
+    <string name="gender">Gender</string>
+    <string name="room_number">Room Number</string>
+    <string name="bed_number">Bed Number</string>
+    <string name="ok">OK</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="loading">Loading ...</string>
+    <string name="no_roc_data">No resident(s) available on the facility </string>
+    <string name="search_roc">Type Name or Room Number to Search</string>
+    <string name="unlock">Unlock</string>
+    <string name="history">VIEW HISTORY</string>
+    <string name="view_summary">VIEW SUMMARY</string>
+    <string name="help">HELP</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="request_order">REQUEST A CAREGIVER</string>
+    <string name="looking_cg">LOOKING FOR A CAREGIVER</string>
+    <string name="caregiver_arriving">CAREGIVER ARRIVING IN APPROXIMATELY</string>
+    <string name="caregiver_service">CAREGIVER AT YOUR SERVICE</string>
+    <string name="caregiver_found">CAREGIVER FOUND</string>
+    <string name="caregiver_arrived">CAREGIVER HAS ARRIVED</string>
+    <string name="request_submitted">REQUEST SUBMITTED</string>
+    <string name="caregiver_on_the_way">CAREGIVER IS ON THE WAY</string>
+    <string name="cancel_caregiver_request">CANCEL CAREGIVER REQUEST</string>
+
+    <string name="date">Date</string>
+    <string name="lb_cg">Caregiver</string>
+    <string name="service_duration">Service Duration</string>
+    <string name="rating">Rating</string>
+
+    <string name="timer_sample">00:00:00</string>
+    <string name="lb_agent_login">Agent Login</string>
+    <string name="lb_care_summary">Care Summary</string>
+    <string name="lb_date">October 31, 2017</string>
+    <string name="lb_cg_name">Ashley Jonson</string>
+    <string name="lb_caregiver">caregiver</string>
+    <string name="lb_service_rating">service rating</string>
+    <string name="time_details">Time Details</string>
+    <string name="task_details">Task Details</string>
+    <string name="caregiver_requested">Caregiver requested</string>
+    <string name="cg_arrived">Caregiver arrived</string>
+    <string name="caregiver_completed_request">Caregiver completed request</string>
+    <string name="duration_care">Duration of care</string>
+    <string name="task_performed">Task performed :</string>
+</resources>

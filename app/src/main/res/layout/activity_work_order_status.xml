@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/appBarLayout">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:titleTextColor="@color/color_black"
+                            android:background="?attr/colorPrimary">
+
+                            <include layout = "@layout/ab_request_order" />
+
+                        </android.support.v7.widget.Toolbar>
+                    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout">
+
+
+        <TextView
+            android:id="@+id/txtWorkOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/looking_cg"
+            android:textSize="28sp" />
+
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtWorkOrderStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/timer_sample"
+            android:textSize="28sp" />
+
+
+        <LinearLayout
+            android:id="@+id/work_order_status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/request_submitted_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/caregiver_progress_box_height"
+                android:layout_marginLeft="@dimen/caregiver_progress_box_marginLeft"
+                android:layout_weight="1"
+                android:background="@drawable/bg_green_box"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="@dimen/caregiver_progress_box_circle_size"
+                    android:layout_height="@dimen/caregiver_progress_box_circle_size"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:background="@null"
+                    android:src="@drawable/icon_success_green" />
+
+                <TextView
+                    android:id="@+id/txtRequestSubmitted"
+                    android:layout_width="@dimen/caregiver_progress_box_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="30dp"
+                    android:text="@string/request_submitted"
+                    android:textColor="@color/color_font_green"
+                    android:textSize="@dimen/caregiver_progress_box_text_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/caregiver_decision_progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/caregiver_progress_box_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/caregiver_progress_box_marginLeft"
+                android:layout_weight="1"
+                android:background="@drawable/bg_blue_box"
+                android:orientation="vertical">
+
+                <RelativeLayout android:id="@+id/look_for_caregiver_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="80dp"
+                                android:layout_centerHorizontal="true">
+
+
+                                <ImageButton    android:id="@+id/btnCaregiverButtonImage"
+                                                android:layout_width="@dimen/caregiver_progress_box_circle_size"
+                                                android:layout_height="@dimen/caregiver_progress_box_circle_size"
+                                                android:layout_alignLeft="@+id/pbLookForCaregiver"
+                                                android:layout_alignTop="@+id/pbLookForCaregiver"
+                                                android:layout_alignRight="@+id/pbLookForCaregiver"
+                                                android:layout_alignBottom="@+id/pbLookForCaregiver"
+                                                android:background="@null"
+                                                android:src="@drawable/ic_white_circle_search" />
+
+
+                                <ProgressBar    android:id="@+id/pbLookForCaregiver"
+                                                android:theme="@style/CircularProgress"
+                                                android:layout_width="220dp"
+                                                android:layout_height="220dp"
+                                                android:layout_centerVertical="true"
+                                                android:layout_centerHorizontal="true"
+                                                android:indeterminate="true"/>
+
+                </RelativeLayout>
+
+
+                <TextView       android:id="@+id/txtLookForCaregiver"
+                                android:layout_width="@dimen/caregiver_progress_box_text_width"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/look_for_caregiver_layout"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="110dp"
+                                android:paddingLeft="10dp"
+                                android:text="@string/looking_cg"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/caregiver_progress_box_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/caregiver_task_progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/caregiver_progress_box_height"
+                android:layout_marginLeft="@dimen/caregiver_progress_box_marginLeft"
+                android:layout_marginRight="@dimen/caregiver_progress_box_marginLeft"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_box"
+                android:orientation="vertical">
+
+
+                <RelativeLayout android:id="@+id/caregiver_on_the_way_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="80dp"
+                                android:layout_centerHorizontal="true">
+
+
+                                    <ImageButton    android:id="@+id/btnCaregiverArrived"
+                                                    android:layout_width="@dimen/caregiver_progress_box_circle_size"
+                                                    android:layout_height="@dimen/caregiver_progress_box_circle_size"
+                                                    android:layout_alignLeft="@+id/pbCaregiverOnTheWay"
+                                                    android:layout_alignTop="@+id/pbCaregiverOnTheWay"
+                                                    android:layout_alignRight="@+id/pbCaregiverOnTheWay"
+                                                    android:layout_alignBottom="@+id/pbCaregiverOnTheWay"
+                                                    android:background="@null"
+                                                    android:src="@drawable/ic_white_circle_caregiver_grey" />
+
+
+                                    <ProgressBar    android:id="@+id/pbCaregiverOnTheWay"
+                                                    android:visibility="gone"
+                                                    android:theme="@style/CircularProgress"
+                                                    android:layout_width="220dp"
+                                                    android:layout_height="220dp"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:indeterminate="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtCaregiverOnTheWay"
+                    android:layout_width="@dimen/caregiver_progress_box_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/caregiver_on_the_way_layout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="110dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/caregiver_on_the_way"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/caregiver_progress_box_text_size" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/work_order_status_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/pink"
+            android:text="@string/cancel_caregiver_request"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
